@@ -4,7 +4,7 @@
 
 **A premium, bilingual (Persian / English) full-stack CRM for freelancers, developers, designers, consultants and small businesses.**
 
-Persian (فارسی) is the default language with full **RTL** support; English is a first-class **LTR** alternative — switchable instantly without a page reload.
+Persian is the default language with full **RTL** support; English is a first-class **LTR** alternative — switchable instantly without a page reload.
 
 </div>
 
