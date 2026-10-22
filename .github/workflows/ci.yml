@@ -1,0 +1,71 @@
+# NEXORA CRM — Continuous Integration
+#
+# Deterministic quality gate. Every step must pass; no step is allowed to
+# fail softly (no `continue-on-error`, no relaxed compiler/lint flags).
+#
+# Order (cheapest, most-deterministic first):
+#   1. install (frozen lockfile — bun.lock is the single source of truth)
+#   2. prisma generate (client + types required by lint/tsc/tests/build)
+#   3. lint (eslint)
+#   4. typecheck (tsc --noEmit — the same check `next build` runs)
+#   5. tests  (isolated throwaway SQLite; never the development database)
+#   6. production build (next build with standalone output)
+#
+# Database safety: the test bootstrap (tests/setup.ts) always points
+# DATABASE_URL at a fresh mkdtemp directory, so the suite can never touch
+# db/custom.db. The build step gets its own throwaway DATABASE_URL because
+# Prisma validates the env var while instantiating the client — CI never
+# creates or migrates a real database.
+
+name: CI
+
+on:
+  push:
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality-gate:
+    name: lint · typecheck · test · build
+    runs-on: ubuntu-latest
+    env:
+      NEXT_TELEMETRY_DISABLED: "1"
+      # Throwaway database URLs — CI never touches a real development or
+      # production database file.
+      CI_DATABASE_URL: "file:/tmp/nexora-ci-test.db"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies (frozen lockfile)
+        run: bun install --frozen-lockfile
+
+      - name: Generate Prisma client
+        run: bunx prisma generate
+
+      - name: Lint
+        run: bun run lint
+
+      - name: Typecheck
+        run: bunx tsc --noEmit
+
+      - name: Test (isolated temporary SQLite)
+        run: bun test tests/
+        env:
+          DATABASE_URL: ${{ env.CI_DATABASE_URL }}
+
+      - name: Production build
+        run: bun run build
+        env:
+          # Prisma validates DATABASE_URL when the client is instantiated
+          # during build-time route evaluation. This points at a throwaway
+          # file; the build does not create or migrate any database.
+          DATABASE_URL: "file:/tmp/nexora-ci-build.db"

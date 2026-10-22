@@ -1,0 +1,981 @@
+{
+  "common": {
+    "appName": "نکسورا CRM",
+    "appVersion": "نسخه ۱.۰.۰",
+    "save": "ذخیره",
+    "saving": "در حال ذخیره…",
+    "cancel": "انصراف",
+    "delete": "حذف",
+    "edit": "ویرایش",
+    "create": "ایجاد",
+    "add": "افزودن",
+    "archive": "بایگانی",
+    "restore": "بازگردانی",
+    "close": "بستن",
+    "back": "بازگشت",
+    "search": "جستجو",
+    "filter": "فیلتر",
+    "clearFilters": "پاک‌کردن فیلترها",
+    "confirm": "تأیید",
+    "retry": "تلاش مجدد",
+    "refresh": "به‌روزرسانی",
+    "export": "خروجی CSV",
+    "import": "ورود CSV",
+    "loading": "در حال بارگذاری…",
+    "noData": "داده‌ای وجود ندارد",
+    "viewDetails": "مشاهده جزئیات",
+    "settings": "تنظیمات",
+    "logout": "خروج از حساب",
+    "yes": "بله",
+    "no": "خیر",
+    "all": "همه",
+    "none": "هیچ",
+    "optional": "اختیاری",
+    "required": "الزامی",
+    "more": "بیشتر",
+    "actions": "عملیات",
+    "quickActions": "اقدامات سریع",
+    "selectPlaceholder": "انتخاب کنید…",
+    "from": "از",
+    "to": "تا",
+    "apply": "اعمال",
+    "reset": "بازنشانی",
+    "created": "تاریخ ایجاد",
+    "updated": "آخرین تغییر",
+    "owner": "مسئول",
+    "assignee": "مسئول اجرا",
+    "dueDate": "تاریخ سررسید",
+    "notes": "یادداشت‌ها",
+    "description": "توضیحات",
+    "title": "عنوان",
+    "name": "نام",
+    "email": "ایمیل",
+    "phone": "تلفن",
+    "tags": "برچسب‌ها",
+    "value": "ارزش",
+    "priority": "اولویت",
+    "status": "وضعیت",
+    "source": "منبع",
+    "archived": "بایگانی‌شده",
+    "showArchived": "نمایش بایگانی‌شده‌ها",
+    "deleteConfirmTitle": "حذف رکورد",
+    "deleteConfirmDescription": "آیا از حذف «{{name}}» مطمئن هستید؟ این عمل قابل بازگشت نیست.",
+    "archiveConfirmTitle": "بایگانی رکورد",
+    "archiveConfirmDescription": "رکورد «{{name}}» بایگانی شود؟ می‌توانید بعداً آن را بازگردانید.",
+    "unsavedChanges": "تغییرات ذخیره‌نشده ممکن است از بین برود.",
+    "pagination": {
+      "pageOf": "صفحه {{page}} از {{total}}",
+      "prev": "قبلی",
+      "next": "بعدی",
+      "rowsCount": "{{count}} نتیجه",
+      "pageSize": "تعداد در صفحه"
+    },
+    "theme": {
+      "label": "پوسته",
+      "light": "روشن",
+      "dark": "تیره",
+      "system": "سیستم"
+    },
+    "language": "زبان",
+    "workspace": "فضای کاری",
+    "emptyStateTitle": "هنوز چیزی اینجا نیست",
+    "emptyStateDescription": "برای شروع، اولین مورد را ایجاد کنید.",
+    "emptyFilteredTitle": "نتیجه‌ای یافت نشد",
+    "emptyFilteredDescription": "فیلترها را تغییر دهید یا پاک کنید.",
+    "errorStateTitle": "خطایی رخ داد",
+    "errorStateDescription": "بارگذاری اطلاعات ناموفق بود. دوباره تلاش کنید."
+  },
+  "time": {
+    "justNow": "همین حالا",
+    "minutesAgo": "{{count}} دقیقه پیش",
+    "hoursAgo": "{{count}} ساعت پیش",
+    "daysAgo": "{{count}} روز پیش",
+    "inMinutes": "{{count}} دقیقه بعد",
+    "inHours": "{{count}} ساعت بعد",
+    "inDays": "{{count}} روز بعد",
+    "overdue": "عقب‌افتاده",
+    "dueToday": "سررسید امروز",
+    "noDueDate": "بدون سررسید",
+    "today": "امروز",
+    "yesterday": "دیروز",
+    "tomorrow": "فردا",
+    "thisWeek": "این هفته",
+    "last7": "۷ روز گذشته",
+    "last30": "۳۰ روز گذشته",
+    "last90": "۹۰ روز گذشته",
+    "last12m": "۱۲ ماه گذشته"
+  },
+  "auth": {
+    "loginTitle": "ورود به نکسورا",
+    "loginSubtitle": "به CRM خود خوش آمدید. لطفاً وارد شوید.",
+    "registerTitle": "ساخت حساب جدید",
+    "registerSubtitle": "چند ثانیه طول می‌کشد؛ اولین فضای کاری شما خودکار ساخته می‌شود.",
+    "nameField": "نام و نام خانوادگی",
+    "namePlaceholder": "مثلاً علیرضا رجایی",
+    "emailField": "ایمیل",
+    "emailPlaceholder": "you@example.com",
+    "passwordField": "گذرواژه",
+    "passwordPlaceholder": "••••••••",
+    "confirmPasswordField": "تکرار گذرواژه",
+    "workspaceNameField": "نام فضای کاری",
+    "workspaceNamePlaceholder": "مثلاً کسب‌وکار من",
+    "loginButton": "ورود",
+    "registerButton": "ثبت‌نام",
+    "registering": "در حال ثبت‌نام…",
+    "loggingIn": "در حال ورود…",
+    "noAccount": "حساب ندارید؟",
+    "hasAccount": "حساب دارید؟",
+    "goToRegister": "ثبت‌نام کنید",
+    "goToLogin": "وارد شوید",
+    "tagline": "مدیریت کامل چرخه مشتری — از لید تا فروش",
+    "feature1": "رادار پیگیری هوشمند",
+    "feature2": "قیف فروش بصری (کانبان)",
+    "feature3": "گزارش‌ها و اتوماسیون",
+    "heroNote": "دوزبانه: فارسی و English — با پشتیبانی کامل راست‌به‌چپ",
+    "passwordNote": "بازیابی گذرواژه با ایمیل پیکربندی نشده است؛ در صورت فراموشی با مدیر سیستم تماس بگیرید.",
+    "logoutSuccess": "با موفقیت خارج شدید"
+  },
+  "nav": {
+    "overview": "نمای کلی",
+    "radar": "رادار پیگیری",
+    "leads": "لیدها",
+    "contacts": "مخاطبین",
+    "companies": "شرکت‌ها",
+    "deals": "فرصت‌ها و قیف فروش",
+    "tasks": "کارها",
+    "calendar": "تقویم",
+    "activities": "فعالیت‌ها",
+    "reports": "گزارش‌ها و تحلیل",
+    "automation": "اتوماسیون",
+    "settings": "تنظیمات"
+  },
+  "shell": {
+    "workspaceSelector": "انتخاب فضای کاری",
+    "createWorkspace": "فضای کاری جدید",
+    "workspaceNameLabel": "نام فضای کاری",
+    "globalSearchPlaceholder": "جستجو در لیدها، مخاطبین، فرصت‌ها…",
+    "searchHint": "برای جستجوی سریع کلید Ctrl+K را بزنید",
+    "notifications": "اعلان‌ها",
+    "markAllRead": "خواندن همه",
+    "noNotifications": "اعلان جدیدی ندارید",
+    "userMenu": "منوی کاربر",
+    "profile": "پروفایل",
+    "accountSettings": "تنظیمات حساب",
+    "langSwitcher": "تغییر زبان",
+    "faLabel": "فارسی",
+    "enLabel": "English",
+    "noResults": "نتیجه‌ای یافت نشد",
+    "minChars": "حداقل ۲ حرف بنویسید…",
+    "searching": "در حال جستجو…",
+    "searchResults": "نتایج جستجو",
+    "groupLeads": "لیدها",
+    "groupContacts": "مخاطبین",
+    "groupCompanies": "شرکت‌ها",
+    "groupDeals": "فرصت‌ها",
+    "groupTasks": "کارها",
+    "mobileMenu": "منوی اصلی",
+    "createdWorkspace": "فضای کاری ساخته شد",
+    "switchedWorkspace": "فضای کاری تغییر کرد"
+  },
+  "enums": {
+    "leadStatus": {
+      "NEW": "جدید",
+      "CONTACTED": "تماس گرفته‌شده",
+      "QUALIFIED": "واجد شرایط",
+      "DISQUALIFIED": "رد‌شده",
+      "CONVERTED": "تبدیل‌شده"
+    },
+    "priority": {
+      "LOW": "کم",
+      "MEDIUM": "متوسط",
+      "HIGH": "زیاد"
+    },
+    "source": {
+      "WEBSITE": "وب‌سایت",
+      "REFERRAL": "معرفی",
+      "SOCIAL": "شبکه اجتماعی",
+      "CAMPAIGN": "کمپین",
+      "DIRECT": "تماس مستقیم",
+      "OTHER": "سایر"
+    },
+    "activityType": {
+      "CALL": "تماس تلفنی",
+      "MEETING": "جلسه",
+      "EMAIL": "ایمیل (ثبت‌شده)",
+      "NOTE": "یادداشت",
+      "TASK_EVENT": "رویداد کار",
+      "STAGE_CHANGE": "تغییر مرحله",
+      "CONVERSION": "تبدیل لید",
+      "SYSTEM": "سیستمی"
+    },
+    "taskStatus": {
+      "OPEN": "باز",
+      "DONE": "انجام‌شده"
+    },
+    "role": {
+      "OWNER": "مالک",
+      "ADMIN": "مدیر",
+      "MEMBER": "عضو"
+    },
+    "stageType": {
+      "OPEN": "باز",
+      "WON": "برده‌شده",
+      "LOST": "باخته‌شده"
+    },
+    "severity": {
+      "CRITICAL": "بحرانی",
+      "HIGH": "مهم",
+      "MEDIUM": "متوسط",
+      "LOW": "کم"
+    },
+    "recurrence": {
+      "NONE": "بدون تکرار",
+      "DAILY": "روزانه",
+      "WEEKLY": "هفتگی",
+      "MONTHLY": "ماهانه"
+    },
+    "entityType": {
+      "lead": "لید",
+      "contact": "مخاطب",
+      "company": "شرکت",
+      "deal": "فرصت",
+      "task": "کار"
+    },
+    "customFieldType": {
+      "TEXT": "متن",
+      "NUMBER": "عدد",
+      "DATE": "تاریخ",
+      "BOOLEAN": "درست/غلط",
+      "SELECT": "تک‌انتخابی",
+      "MULTI_SELECT": "چندانتخابی",
+      "URL": "لینک"
+    }
+  },
+  "dashboard": {
+    "title": "نمای کلی",
+    "subtitle": "سلام {{name}}! خلاصه وضعیت کسب‌وکار شما اینجاست.",
+    "subtitleAlt": "خلاصه وضعیت کسب‌وکار شما در یک نگاه.",
+    "kpi": {
+      "totalContacts": "کل مخاطبین",
+      "newLeads": "لیدهای جدید",
+      "activeDeals": "فرصت‌های فعال",
+      "openPipeline": "ارزش قیف باز",
+      "wonRevenue": "درآمد برده‌شده",
+      "conversionRate": "نرخ تبدیل",
+      "overdueTasks": "کارهای عقب‌افتاده",
+      "followUpsToday": "پیگیری‌های امروز"
+    },
+    "charts": {
+      "leadsOverTime": "لیدهای جدید در طول زمان",
+      "dealsByStage": "فرصت‌ها به تفکیک مرحله",
+      "wonVsLost": "برده‌شده در برابر باخته‌شده",
+      "revenueOverTime": "درآمد در طول زمان",
+      "leadSources": "منابع لید",
+      "taskCompletion": "وضعیت کارها",
+      "won": "برده‌شده",
+      "lost": "باخته‌شده",
+      "completed": "انجام‌شده",
+      "openTasks": "باز",
+      "overdue": "عقب‌افتاده",
+      "count": "تعداد",
+      "value": "ارزش"
+    },
+    "sections": {
+      "todayPriorities": "اولویت‌های امروز",
+      "overdueFollowUps": "پیگیری‌های عقب‌افتاده",
+      "stagnantDeals": "فرصت‌های راکد",
+      "recentActivity": "آخرین فعالیت‌ها",
+      "upcomingMeetings": "جلسات پیش‌رو",
+      "alerts": "هشدارهای مهم",
+      "radarCritical": "موارد بحرانی رادار"
+    },
+    "emptyKpis": "برای دیدن آمار، داده ثبت کنید یا از تنظیمات داده نمونه بسازید.",
+    "loadDemo": "ساخت داده نمونه",
+    "viewAll": "مشاهده همه"
+  },
+  "leads": {
+    "title": "لیدها",
+    "subtitle": "مدیریت سرنخ‌ها از اولین تماس تا تبدیل",
+    "createTitle": "لید جدید",
+    "editTitle": "ویرایش لید",
+    "createdToast": "لید ساخته شد",
+    "updatedToast": "لید به‌روزرسانی شد",
+    "archivedToast": "لید بایگانی شد",
+    "restoredToast": "لید بازگردانده شد",
+    "deletedToast": "لید حذف شد",
+    "field": {
+      "companyName": "نام شرکت",
+      "jobTitle": "عنوان شغلی",
+      "estimatedValue": "ارزش تخمینی",
+      "lastContactedAt": "آخرین تماس",
+      "nextFollowUpAt": "پیگیری بعدی",
+      "disqualificationReason": "دلیل ردشدن"
+    },
+    "actions": {
+      "convert": "تبدیل به مخاطب",
+      "convertTitle": "تبدیل لید به مخاطب",
+      "convertDescription": "لید «{{name}}» به مخاطب تبدیل می‌شود. تاریخچه فعالیت‌ها حفظ می‌شود.",
+      "convertAlsoDeal": "ایجاد فرصت فروش همراه با تبدیل",
+      "convertDealTitle": "عنوان فرصت",
+      "convertDealValue": "ارزش فرصت",
+      "convertSuccess": "لید با موفقیت تبدیل شد",
+      "disqualify": "رد کردن",
+      "disqualifyTitle": "رد کردن لید",
+      "disqualifyReason": "دلیل ردشدن را بنویسید",
+      "disqualifySuccess": "لید رد شد",
+      "qualify": "واجد شرایط",
+      "markContacted": "ثبت تماس",
+      "setFollowUp": "تعیین پیگیری بعدی",
+      "logCall": "ثبت تماس"
+    },
+    "duplicateWarning": "لیدی با این ایمیل از قبل وجود دارد",
+    "bulk": {
+      "selected": "{{count}} مورد انتخاب شد",
+      "archive": "بایگانی",
+      "restore": "بازگردانی",
+      "assign": "واگذاری به",
+      "addTag": "افزودن برچسب",
+      "delete": "حذف"
+    }
+  },
+  "contacts": {
+    "title": "مخاطبین",
+    "subtitle": "افراد کلیدی و اطلاعات تماس آن‌ها",
+    "createTitle": "مخاطب جدید",
+    "editTitle": "ویرایش مخاطب",
+    "createdToast": "مخاطب ساخته شد",
+    "updatedToast": "مخاطب به‌روزرسانی شد",
+    "archivedToast": "مخاطب بایگانی شد",
+    "restoredToast": "مخاطب بازگردانده شد",
+    "deletedToast": "مخاطب حذف شد",
+    "field": {
+      "jobTitle": "عنوان شغلی",
+      "company": "شرکت",
+      "lastContactedAt": "آخرین تماس",
+      "nextFollowUpAt": "پیگیری بعدی"
+    },
+    "tabs": {
+      "overview": "نمای کلی",
+      "deals": "فرصت‌ها",
+      "tasks": "کارها",
+      "timeline": "خط زمانی",
+      "notes": "یادداشت‌ها",
+      "customFields": "فیلدهای سفارشی"
+    },
+    "duplicateWarning": "مخاطبی با این ایمیل از قبل وجود دارد"
+  },
+  "companies": {
+    "title": "شرکت‌ها",
+    "subtitle": "سازمان‌ها و ارتباط آن‌ها با مخاطبین و فرصت‌ها",
+    "createTitle": "شرکت جدید",
+    "editTitle": "ویرایش شرکت",
+    "createdToast": "شرکت ساخته شد",
+    "updatedToast": "شرکت به‌روزرسانی شد",
+    "archivedToast": "شرکت بایگانی شد",
+    "restoredToast": "شرکت بازگردانده شد",
+    "deletedToast": "شرکت حذف شد",
+    "field": {
+      "website": "وب‌سایت",
+      "industry": "صنعت",
+      "size": "اندازه",
+      "address": "آدرس",
+      "country": "کشور"
+    },
+    "tabs": {
+      "overview": "نمای کلی",
+      "contacts": "مخاطبین",
+      "deals": "فرصت‌ها",
+      "tasks": "کارها",
+      "timeline": "خط زمانی"
+    },
+    "sizeOptions": {
+      "1-10": "۱ تا ۱۰ نفر",
+      "10-50": "۱۰ تا ۵۰ نفر",
+      "50-200": "۵۰ تا ۲۰۰ نفر",
+      "200+": "بیش از ۲۰۰ نفر"
+    }
+  },
+  "deals": {
+    "title": "فرصت‌های فروش",
+    "subtitle": "قیف فروش بصری — کارت‌ها را بکشید و رها کنید",
+    "createTitle": "فرصت جدید",
+    "editTitle": "ویرایش فرصت",
+    "createdToast": "فرصت ساخته شد",
+    "updatedToast": "فرصت به‌روزرسانی شد",
+    "archivedToast": "فرصت بایگانی شد",
+    "restoredToast": "فرصت بازگردانده شد",
+    "deletedToast": "فرصت حذف شد",
+    "field": {
+      "pipeline": "قیف فروش",
+      "stage": "مرحله",
+      "probability": "احتمال برد",
+      "expectedCloseDate": "تاریخ بستن پیش‌بینی‌شده",
+      "actualCloseDate": "تاریخ بستن واقعی",
+      "lostReason": "دلیل باخت",
+      "contact": "مخاطب",
+      "company": "شرکت",
+      "currency": "ارز"
+    },
+    "kanban": {
+      "dragHint": "کارت‌ها را بین ستون‌ها بکشید",
+      "stageTotal": "جمع: {{value}}",
+      "stageCount": "{{count}} فرصت",
+      "emptyStage": "موردی در این مرحله نیست"
+    },
+    "actions": {
+      "markWon": "برنده شد",
+      "markLost": "باخت",
+      "markLostTitle": "ثبت فرصت باخته‌شده",
+      "markLostReason": "دلیل باخت (اختیاری)",
+      "wonToast": "فرصت برده شد 🎉",
+      "lostToast": "فرصت باخته ثبت شد",
+      "stageChangedToast": "مرحله فرصت تغییر کرد"
+    },
+    "filters": {
+      "pipeline": "قیف",
+      "stage": "مرحله",
+      "owner": "مسئول",
+      "priority": "اولویت"
+    },
+    "forecast": {
+      "title": "پیش‌بینی فروش",
+      "openPipeline": "قیف باز",
+      "weightedPipeline": "قیف وزنی (Weighted)",
+      "wonRevenue": "درآمد قطعی",
+      "lostValue": "ارزش باخته",
+      "winRate": "نرخ برد",
+      "avgDealSize": "میانگین اندازه فرصت",
+      "expectedThisMonth": "بسته‌شدن این ماه",
+      "expectedNextMonth": "بسته‌شدن ماه بعد",
+      "forecastNote": "مقادیر وزنی تخمینی‌اند و درآمد قطعی نیستند."
+    },
+    "detail": {
+      "stageHistory": "تاریخچه مراحل",
+      "daysInStage": "{{count}} روز در این مرحله",
+      "daysSinceActivity": "{{count}} روز از آخرین فعالیت"
+    }
+  },
+  "pipelines": {
+    "title": "قیف‌های فروش",
+    "addPipeline": "قیف جدید",
+    "pipelineName": "نام قیف",
+    "defaultPipeline": "قیف پیش‌فرض",
+    "setAsDefault": "تنظیم به‌عنوان پیش‌فرض",
+    "addStage": "افزودن مرحله",
+    "editStage": "ویرایش مرحله",
+    "stageName": "نام مرحله",
+    "stageProbability": "احتمال برد (%)",
+    "stageType": "نوع مرحله",
+    "deleteStageWarn": "حذف مرحله فقط زمانی ممکن است که فرصتی در آن نباشد.",
+    "stageCreated": "مرحله اضافه شد",
+    "stageUpdated": "مرحله به‌روزرسانی شد",
+    "stageDeleted": "مرحله حذف شد",
+    "pipelineCreated": "قیف ساخته شد",
+    "cannotDeleteStage": "این مرحله فرصت فعال دارد و قابل حذف نیست",
+    "customStagesNote": "نام مراحلی که خودتان می‌سازید بین دو زبان ترجمه نمی‌شوند و همان‌طور که وارد کرده‌اید نمایش داده می‌شوند."
+  },
+  "tasks": {
+    "title": "کارها",
+    "subtitle": "کارها و پیگیری‌های خود را مدیریت کنید",
+    "createTitle": "کار جدید",
+    "editTitle": "ویرایش کار",
+    "createdToast": "کار ساخته شد",
+    "updatedToast": "کار به‌روزرسانی شد",
+    "completedToast": "کار انجام شد",
+    "reopenedToast": "کار بازگشایی شد",
+    "deletedToast": "کار حذف شد",
+    "field": {
+      "dueAt": "سررسید",
+      "recurrence": "تکرار",
+      "relatedTo": "مرتبط با"
+    },
+    "actions": {
+      "complete": "انجام شد",
+      "reopen": "بازگشایی"
+    },
+    "views": {
+      "list": "فهرست",
+      "board": "برد"
+    },
+    "sections": {
+      "overdue": "عقب‌افتاده",
+      "today": "امروز",
+      "upcoming": "پیش‌رو",
+      "done": "انجام‌شده"
+    },
+    "empty": "کاری ثبت نشده است. اولین کار را بسازید!"
+  },
+  "calendar": {
+    "title": "تقویم",
+    "subtitle": "کارها و سررسیدها در یک نگاه",
+    "day": "روز",
+    "week": "هفته",
+    "month": "ماه",
+    "prev": "قبلی",
+    "next": "بعدی",
+    "today": "امروز",
+    "noEvents": "رویدادی در این بازه نیست",
+    "legendTasks": "کارها",
+    "legendFollowUps": "پیگیری‌ها",
+    "selectedDay": "رویدادهای روز انتخابی",
+    "timezoneNote": "تقویم بر اساس منطقه زمانی فضای کاری نمایش داده می‌شود. تاریخ‌ها در حالت فارسی با تقویم هجری شمسی نمایش داده می‌شوند."
+  },
+  "activities": {
+    "title": "فعالیت‌ها",
+    "subtitle": "تماس‌ها، جلسات، یادداشت‌ها و تغییرات",
+    "logActivity": "ثبت فعالیت",
+    "logCall": "ثبت تماس",
+    "logMeeting": "ثبت جلسه",
+    "logEmail": "ثبت ایمیل",
+    "logNote": "ثبت یادداشت",
+    "createdToast": "فعالیت ثبت شد",
+    "field": {
+      "type": "نوع فعالیت",
+      "content": "توضیحات",
+      "relatedTo": "مرتبط با"
+    },
+    "emailNote": "ایمیل ثبت‌شده ارسال واقعی نیست؛ فقط در تاریخچه ثبت می‌شود.",
+    "empty": "هنوز فعالیتی ثبت نشده است",
+    "byUser": "توسط {{name}}",
+    "related": "مرتبط با: {{entity}}"
+  },
+  "radar": {
+    "title": "رادار پیگیری",
+    "subtitle": "مواردی که به توجه شما نیاز دارند — با دلیل شفاف",
+    "summary": {
+      "critical": "بحرانی",
+      "high": "مهم",
+      "medium": "متوسط",
+      "low": "کم",
+      "urgent": "{{count}} مورد نیازمند توجه فوری"
+    },
+    "rules": {
+      "OVERDUE_TASK": {
+        "name": "کار عقب‌افتاده",
+        "description": "کاری که سررسیدش گذشته و هنوز انجام نشده است.",
+        "explanation": "«{{title}}» {{days}} روز از سررسید آن گذشته است."
+      },
+      "TASK_DUE_TODAY": {
+        "name": "سررسید امروز",
+        "description": "کاری که باید امروز انجام شود.",
+        "explanation": "«{{title}}» باید امروز انجام شود."
+      },
+      "LEAD_INACTIVE": {
+        "name": "لید بدون پیگیری",
+        "description": "لیدی که مدت طولانی فعالیت جدیدی روی آن ثبت نشده است.",
+        "explanation": "«{{title}}» {{days}} روز است هیچ فعالیتی نداشته (حد آستانه: {{threshold}} روز)."
+      },
+      "DEAL_INACTIVE": {
+        "name": "فرصت راکد",
+        "description": "فرصتی که مدت طولانی روی آن کار نشده است.",
+        "explanation": "«{{title}}» با ارزش {{value}}، {{days}} روز است بی‌تحرک است (حد آستانه: {{threshold}} روز)."
+      },
+      "DEAL_STAGE_STAGNANT": {
+        "name": "توقف در مرحله",
+        "description": "فرصتی که مدت زیادی در یک مرحله مانده است.",
+        "explanation": "«{{title}}» {{days}} روز است در مرحله «{{stage}}» مانده (حد آستانه: {{threshold}} روز)."
+      },
+      "CONTACT_FOLLOWUP_DUE": {
+        "name": "پیگیری سررسید‌شده",
+        "description": "مخاطبی که زمان پیگیری‌اش فرا رسیده یا گذشته است.",
+        "explanation": "پیگیری «{{title}}» {{days}} روز عقب است."
+      },
+      "HIGH_VALUE_CLOSING": {
+        "name": "فرصت مهم نزدیک به بسته‌شدن",
+        "description": "فرصت با ارزش بالا که تاریخ بستن آن نزدیک است اما فعالیت کافی ندارد.",
+        "explanation": "«{{title}}» با ارزش {{value}} به بسته‌شدن نزدیک است اما {{daysIdle}} روز بی‌فعالیت بوده."
+      },
+      "MISSING_INFO": {
+        "name": "اطلاعات ناقص",
+        "description": "رکوردی که برای گام بعدی به اطلاعات بیشتری نیاز دارد.",
+        "explanation": "«{{title}}» اطلاعات ناقص دارد: {{missing}}."
+      }
+    },
+    "missing": {
+      "estimatedValue": "ارزش تخمینی خالی است",
+      "nextFollowUpAt": "تاریخ پیگیری بعدی خالی است",
+      "both": "ارزش تخمینی و تاریخ پیگیری خالی است",
+      "contact": "مخاطب مرتبط خالی است",
+      "expectedCloseDate": "تاریخ بستن پیش‌بینی‌شده خالی است"
+    },
+    "actions": {
+      "logFollowUp": "ثبت پیگیری",
+      "logActivity": "ثبت فعالیت",
+      "completeTask": "انجام کار",
+      "reviewDeal": "بازبینی فرصت",
+      "completeInfo": "تکمیل اطلاعات"
+    },
+    "filters": {
+      "severity": "شدت",
+      "type": "نوع قانون",
+      "owner": "مسئول"
+    },
+    "empty": {
+      "title": "همه‌چیز تحت کنترل است ✨",
+      "description": "در حال حاضر مورد نیازمند توجهی پیدا نشد."
+    },
+    "lastChecked": "آخرین بررسی: {{time}}",
+    "thresholdsNote": "حد آستانه‌های رادار در تنظیمات > فضای کاری قابل تغییر است.",
+    "scanNow": "بررسی اسکن اتوماسیون",
+    "scannedToast": "اسکن انجام شد"
+  },
+  "reports": {
+    "title": "گزارش‌ها و تحلیل",
+    "subtitle": "تحلیل فروش، لیدها و بهره‌وری بر اساس داده واقعی",
+    "tabs": {
+      "leads": "لیدها",
+      "sales": "فروش",
+      "productivity": "بهره‌وری"
+    },
+    "filters": {
+      "dateRange": "بازه زمانی",
+      "owner": "مسئول",
+      "pipeline": "قیف",
+      "source": "منبع",
+      "stage": "مرحله"
+    },
+    "leads": {
+      "overTime": "لیدهای جدید در طول زمان",
+      "bySource": "لیدها به تفکیک منبع",
+      "byStatus": "لیدها به تفکیک وضعیت",
+      "conversionRate": "نرخ تبدیل",
+      "avgTimeToConvert": "میانگین زمان تبدیل",
+      "days": "{{count}} روز",
+      "totalLeads": "کل لیدها"
+    },
+    "sales": {
+      "byStage": "فرصت‌ها به تفکیک مرحله",
+      "winRate": "نرخ برد",
+      "wonLost": "برده‌شده و باخته‌شده",
+      "won": "برده‌شده",
+      "lost": "باخته‌شده",
+      "valueOverTime": "ارزش فروش در طول زمان",
+      "weightedPipeline": "قیف وزنی",
+      "avgDealSize": "میانگین اندازه فرصت",
+      "avgCycle": "میانگین چرخه فروش",
+      "lossReasons": "دلایل باخت",
+      "wonValue": "ارزش برده‌شده",
+      "lostValue": "ارزش باخته‌شده"
+    },
+    "productivity": {
+      "completedVsOverdue": "انجام‌شده در برابر عقب‌افتاده",
+      "activitiesOverTime": "فعالیت‌ها در طول زمان",
+      "followUpsCompleted": "پیگیری‌های انجام‌شده",
+      "workloadByOwner": "بار کاری به تفکیک مسئول",
+      "attentionDeals": "فرصت‌های نیازمند توجه",
+      "completed": "انجام‌شده",
+      "overdue": "عقب‌افتاده",
+      "activities": "فعالیت‌ها"
+    },
+    "empty": "برای این بازه داده‌ای وجود ندارد",
+    "exportCsv": "خروجی CSV این گزارش"
+  },
+  "automation": {
+    "title": "اتوماسیون",
+    "subtitle": "قوانین خودکار برای کارهای تکراری",
+    "createRule": "قانون جدید",
+    "editRule": "ویرایش قانون",
+    "createdToast": "قانون ساخته شد",
+    "updatedToast": "قانون به‌روزرسانی شد",
+    "deletedToast": "قانون حذف شد",
+    "enabledToast": "قانون فعال شد",
+    "disabledToast": "قانون غیرفعال شد",
+    "field": {
+      "name": "نام قانون",
+      "description": "توضیحات",
+      "trigger": "رویداد محرک",
+      "conditions": "شرایط",
+      "actions": "اقدامات",
+      "enabled": "فعال",
+      "lastRun": "آخرین اجرا",
+      "runCount": "تعداد اجرا"
+    },
+    "trigger": {
+      "LEAD_CREATED": "ایجاد لید",
+      "DEAL_CREATED": "ایجاد فرصت",
+      "DEAL_STAGE_CHANGED": "تغییر مرحله فرصت",
+      "TASK_OVERDUE": "عقب‌افتادن کار",
+      "DEAL_INACTIVE": "راکد شدن فرصت",
+      "RECORD_ASSIGNED": "واگذاری رکورد",
+      "STATUS_ENTERED": "ورود به وضعیت"
+    },
+    "conditionField": {
+      "value": "ارزش فرصت",
+      "stage": "مرحله",
+      "source": "منبع",
+      "owner": "مسئول",
+      "priority": "اولویت",
+      "status": "وضعیت"
+    },
+    "operator": {
+      "equals": "برابر است با",
+      "notEquals": "برابر نیست با",
+      "greaterThan": "بزرگ‌تر از",
+      "lessThan": "کوچک‌تر از",
+      "contains": "شامل"
+    },
+    "actionType": {
+      "CREATE_TASK": "ایجاد کار",
+      "ADD_TAG": "افزودن برچسب",
+      "ASSIGN": "واگذاری به کاربر",
+      "NOTIFY": "ارسال اعلان",
+      "UPDATE_FIELD": "به‌روزرسانی فیلد",
+      "LOG_EVENT": "ثبت رویداد در تاریخچه"
+    },
+    "actionParam": {
+      "title": "عنوان کار",
+      "dueInDays": "سررسید (چند روز بعد)",
+      "priority": "اولویت",
+      "tagName": "نام برچسب",
+      "userId": "کاربر",
+      "message": "پیام",
+      "field": "فیلد",
+      "value": "مقدار"
+    },
+    "executions": {
+      "title": "تاریخچه اجرا",
+      "status": "وضعیت",
+      "SUCCESS": "موفق",
+      "FAILED": "ناموفق",
+      "SKIPPED": "رد‌شده",
+      "detail": "جزئیات",
+      "empty": "هنوز اجرایی ثبت نشده است",
+      "scanHint": "قوانین زمان‌محور (عقب‌افتادن کار، رکد فرصت) هنگام بازدید داشبورد یا با اسکن دستی اجرا می‌شوند."
+    },
+    "validation": {
+      "needName": "نام قانون الزامی است",
+      "needTrigger": "رویداد محرک را انتخاب کنید",
+      "needAction": "حداقل یک اقدام اضافه کنید",
+      "conditionValue": "مقدار شرط را وارد کنید"
+    },
+    "empty": {
+      "title": "هیچ قانونی تعریف نشده",
+      "description": "یک قانون بسازید تا کارهای تکراری خودکار شوند."
+    },
+    "userCodeNote": "اتوماسیون کد دلخواه اجرا نمی‌کند؛ فقط از اقدامات از پیش تعریف‌شده استفاده می‌کند."
+  },
+  "notifications": {
+    "type": {
+      "ASSIGNMENT": "واگذاری",
+      "TASK_DUE": "سررسید کار",
+      "AUTOMATION": "اتوماسیون",
+      "RADAR": "رادار",
+      "SYSTEM": "سیستمی"
+    }
+  },
+  "search": {
+    "placeholder": "جستجو…",
+    "noResults": "نتیجه‌ای برای «{{query}}» یافت نشد",
+    "resultsCount": "{{count}} نتیجه"
+  },
+  "csv": {
+    "import": {
+      "title": "ورود داده از CSV",
+      "step1": "۱. انتخاب فایل",
+      "step2": "۲. نگاشت ستون‌ها",
+      "step3": "۳. پیش‌نمایش و تأیید",
+      "step4": "۴. نتیجه",
+      "chooseFile": "انتخاب فایل CSV",
+      "dragDrop": "فایل CSV را اینجا رها کنید یا کلیک کنید",
+      "templateHint": "قالب نمونه: تاریخ‌ها میلادی با قالب YYYY-MM-DD و اعداد انگلیسی بدون جداکننده.",
+      "downloadTemplate": "دانلود قالب نمونه",
+      "autoMap": "نگاشت خودکار",
+      "sourceColumn": "ستون فایل",
+      "targetField": "فیلد مقصد",
+      "skipColumn": "— نادیده گرفتن —",
+      "requiredField": "الزامی",
+      "previewTitle": "پیش‌نمایش {{count}} ردیف اول",
+      "validRows": "{{count}} ردیف معتبر",
+      "errorRows": "{{count}} ردیف خطادار",
+      "duplicateRows": "{{count}} مورد احتمالاً تکراری",
+      "rowError": "ردیف {{row}}: {{error}}",
+      "duplicate": "تکراری احتمالی (ایمیل موجود است)",
+      "missingRequired": "فیلد الزامی «{{field}}» خالی است",
+      "invalidDate": "تاریخ نامعتبر (قالب YYYY-MM-DD)",
+      "invalidNumber": "عدد نامعتبر",
+      "skipDuplicates": "رد کردن ردیف‌های تکراری (تطبیق ایمیل)",
+      "importButton": "شروع ورود داده",
+      "importing": "در حال ورود داده…",
+      "resultTitle": "نتیجه ورود داده",
+      "imported": "{{count}} ردیف وارد شد",
+      "skipped": "{{count}} ردیف رد شد",
+      "failed": "{{count}} ردیف ناموفق",
+      "done": "انجام شد",
+      "entities": {
+        "contacts": "مخاطبین",
+        "leads": "لیدها",
+        "companies": "شرکت‌ها"
+      }
+    },
+    "export": {
+      "success": "خروجی CSV آماده دانلود است"
+    }
+  },
+  "customFields": {
+    "title": "فیلدهای سفارشی",
+    "create": "فیلد جدید",
+    "edit": "ویرایش فیلد",
+    "createdToast": "فیلد ساخته شد",
+    "updatedToast": "فیلد به‌روزرسانی شد",
+    "deletedToast": "فیلد حذف شد",
+    "field": {
+      "label": "عنوان نمایشی",
+      "key": "کلید انگلیسی (unique)",
+      "entityType": "مربوط به",
+      "type": "نوع فیلد",
+      "required": "الزامی",
+      "options": "گزینه‌ها (هر خط یک گزینه)",
+      "defaultValue": "مقدار پیش‌فرض"
+    },
+    "empty": "فیلد سفارشی‌ای تعریف نشده است",
+    "deleteWarn": "حذف فیلد، مقادیر ثبت‌شده آن را نیز حذف می‌کند."
+  },
+  "savedViews": {
+    "saveCurrent": "ذخیره فیلترهای فعلی",
+    "namePlaceholder": "نام نمای ذخیره‌شده",
+    "createdToast": "نما ذخیره شد",
+    "deletedToast": "نما حذف شد",
+    "apply": "اعمال نما",
+    "empty": "نمای ذخیره‌شده‌ای ندارید"
+  },
+  "settings": {
+    "title": "تنظیمات",
+    "tabs": {
+      "account": "حساب کاربری",
+      "workspace": "فضای کاری",
+      "members": "اعضا",
+      "crm": "پیکربندی CRM",
+      "data": "مدیریت داده",
+      "about": "درباره"
+    },
+    "account": {
+      "name": "نام",
+      "email": "ایمیل (غیرقابل تغییر)",
+      "languagePref": "زبان رابط کاربری",
+      "languagePrefHint": "این تنظیم بین دستگاه‌های شما همگام می‌شود.",
+      "themePref": "پوسته",
+      "passwordChange": "تغییر گذرواژه",
+      "currentPassword": "گذرواژه فعلی",
+      "newPassword": "گذرواژه جدید",
+      "confirmPassword": "تکرار گذرواژه جدید",
+      "saveProfile": "ذخیره پروفایل",
+      "changePassword": "تغییر گذرواژه",
+      "profileSaved": "پروفایل ذخیره شد",
+      "passwordChanged": "گذرواژه تغییر کرد",
+      "wrongPassword": "گذرواژه فعلی اشتباه است"
+    },
+    "workspace": {
+      "name": "نام فضای کاری",
+      "currency": "ارز پیش‌فرض",
+      "currencyHint": "ارز فقط نحوه نمایش را تعیین می‌کند؛ تبدیل ارزی انجام نمی‌شود.",
+      "timezone": "منطقه زمانی",
+      "radarSection": "حد آستانه‌های رادار پیگیری",
+      "radarLeadInactivity": "روزهای بی‌فعالیتی لید",
+      "radarDealInactivity": "روزهای بی‌فعالیتی فرصت",
+      "radarStageInactivity": "روزهای توقف در مرحله",
+      "radarHighValue": "حد آستانه ارزش بالا",
+      "saved": "تنظیمات ذخیره شد"
+    },
+    "members": {
+      "title": "اعضای فضای کاری",
+      "addMember": "افزودن عضو",
+      "addMemberTitle": "افزودن عضو جدید",
+      "addMemberHint": "با توجه به عدم پیکربندی ایمیل، عضو جدید با ساخت مستقیم حساب و گذرواژه موقت اضافه می‌شود.",
+      "tempPassword": "گذرواژه موقت",
+      "role": "نقش",
+      "roleHint": "مالک/مدیر: مدیریت اعضا و پیکربندی. عضو: کار با رکوردها.",
+      "added": "عضو اضافه شد",
+      "removed": "عضو حذف شد",
+      "roleUpdated": "نقش به‌روزرسانی شد",
+      "removeConfirm": "دسترسی «{{name}}» به این فضای کاری حذف شود؟",
+      "cannotRemoveOwner": "مالک فضای کاری قابل حذف نیست",
+      "alreadyMember": "این کاربر از قبل عضو است",
+      "userExistsNoWorkspace": "کاربر وجود دارد اما عضو این فضای کاری نیست"
+    },
+    "crm": {
+      "pipelines": "قیف‌های فروش و مراحل",
+      "tags": "برچسب‌ها",
+      "customFields": "فیلدهای سفارشی",
+      "tagCreate": "برچسب جدید",
+      "tagName": "نام برچسب",
+      "tagColor": "رنگ",
+      "tagCreated": "برچسب ساخته شد",
+      "tagDeleted": "برچسب حذف شد",
+      "tagInUse": "این برچسب در حال استفاده است",
+      "leadStatusesNote": "وضعیت‌های لید ثابت سیستم هستند: جدید، تماس گرفته‌شده، واجد شرایط، رد‌شده، تبدیل‌شده."
+    },
+    "data": {
+      "title": "مدیریت داده",
+      "import": "ورود CSV",
+      "export": "خروجی CSV",
+      "exportContacts": "خروجی مخاطبین",
+      "exportLeads": "خروجی لیدها",
+      "exportCompanies": "خروجی شرکت‌ها",
+      "archivedRecords": "رکوردهای بایگانی‌شده",
+      "archivedHint": "رکوردهای بایگانی‌شده در ماژول مربوطه با فعال‌کردن «نمایش بایگانی‌شده‌ها» قابل مشاهده‌اند.",
+      "demoData": "داده نمونه",
+      "demoDataHint": "ساخت یک فضای کاری نمایشی با داده واقع‌گرایانه برای تست داشبورد، گزارش‌ها، کانبان و رادار. هرگز رکوردهای واقعی را بازنویسی نمی‌کند.",
+      "createDemo": "ساخت داده نمونه",
+      "demoCreated": "داده نمونه ساخته شد",
+      "demoExists": "فضای کاری نمایشی از قبل وجود دارد"
+    },
+    "about": {
+      "title": "درباره نکسورا CRM",
+      "description": "نکسورا یک CRM مدرن و ماژولار برای فریلنسرها، توسعه‌دهندگان، طراحان، مشاوران و کسب‌وکارهای کوچک است: مدیریت لید تا فروش، قیف بصری، رادار پیگیری، اتوماسیون و گزارش‌ها — با رابط کامل فارسی و English.",
+      "version": "نسخه",
+      "builtBy": "ساخته‌شده توسط علیرضا رجائی",
+      "githubLabel": "مشاهده پروفایل گیت‌هاب",
+      "githubUrl": "https://github.com/alirezarajaee",
+      "copyright": "© ۱۴۰۴ علیرضا رجایی — تمامی حقوق محفوظ است.",
+      "techTitle": "پشته فناوری",
+      "techList": "Next.js 16 · TypeScript · Tailwind CSS 4 · shadcn/ui · Prisma (SQLite) · TanStack Query · Recharts · i18next",
+      "languagesTitle": "زبان‌های پشتیبانی‌شده",
+      "languagesList": "فارسی (پیش‌فرض، RTL) و English (LTR) — قابل تغییر بدون بارگذاری مجدد صفحه"
+    }
+  },
+  "validation": {
+    "required": "این فیلد الزامی است",
+    "email": "ایمیل معتبر وارد کنید",
+    "minChars": "حداقل {{count}} کاراکتر وارد کنید",
+    "maxChars": "حداکثر {{count}} کاراکتر",
+    "number": "عدد معتبر وارد کنید",
+    "positiveNumber": "عدد بزرگ‌تر از صفر وارد کنید",
+    "url": "آدرس معتبر وارد کنید",
+    "date": "تاریخ معتبر وارد کنید",
+    "passwordMatch": "گذرواژه‌ها یکسان نیستند",
+    "passwordLength": "گذرواژه باید حداقل ۸ کاراکتر باشد",
+    "nameRequired": "نام الزامی است",
+    "titleRequired": "عنوان الزامی است",
+    "keyFormat": "کلید فقط شامل حروف انگلیسی، عدد و خط تیره است",
+    "selectOne": "یک گزینه انتخاب کنید"
+  },
+  "errors": {
+    "generic": "خطایی رخ داد. دوباره تلاش کنید.",
+    "network": "اتصال برقرار نشد. اینترنت خود را بررسی کنید.",
+    "UNAUTHORIZED": "برای این عملیات باید وارد شوید.",
+    "FORBIDDEN": "اجازه انجام این عملیات را ندارید.",
+    "NOT_FOUND": "رکورد مورد نظر پیدا نشد.",
+    "DUPLICATE": "رکورد تکراری است.",
+    "VALIDATION_ERROR": "داده‌های ورودی معتبر نیستند.",
+    "RATE_LIMITED": "تلاش‌های زیاد. کمی بعد دوباره امتحان کنید.",
+    "SERVER_ERROR": "خطای سرور. دوباره تلاش کنید.",
+    "INVALID_CREDENTIALS": "ایمیل یا گذرواژه اشتباه است.",
+    "EMAIL_TAKEN": "این ایمیل قبلاً ثبت شده است.",
+    "SESSION_EXPIRED": "نشست شما منقضی شده. دوباره وارد شوید."
+  },
+  "toast": {
+    "success": "انجام شد",
+    "error": "خطا",
+    "copied": "کپی شد"
+  },
+  "a11y": {
+    "sidebar": "ناوبری کناری",
+    "openMenu": "باز کردن منو",
+    "closeMenu": "بستن منو",
+    "toggleTheme": "تغییر پوسته روشن/تیره",
+    "switchLanguage": "تغییر زبان بین فارسی و English",
+    "openNotifications": "باز کردن اعلان‌ها",
+    "openSearch": "باز کردن جستجوی سراسری",
+    "userMenu": "باز کردن منوی کاربر"
+  }
+}

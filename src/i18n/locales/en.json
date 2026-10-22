@@ -1,0 +1,981 @@
+{
+  "common": {
+    "appName": "NEXORA CRM",
+    "appVersion": "Version 1.0.0",
+    "save": "Save",
+    "saving": "Saving…",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "add": "Add",
+    "archive": "Archive",
+    "restore": "Restore",
+    "close": "Close",
+    "back": "Back",
+    "search": "Search",
+    "filter": "Filter",
+    "clearFilters": "Clear filters",
+    "confirm": "Confirm",
+    "retry": "Retry",
+    "refresh": "Refresh",
+    "export": "Export CSV",
+    "import": "Import CSV",
+    "loading": "Loading…",
+    "noData": "No data yet",
+    "viewDetails": "View details",
+    "settings": "Settings",
+    "logout": "Sign out",
+    "yes": "Yes",
+    "no": "No",
+    "all": "All",
+    "none": "None",
+    "optional": "Optional",
+    "required": "Required",
+    "more": "More",
+    "actions": "Actions",
+    "quickActions": "Quick actions",
+    "selectPlaceholder": "Select…",
+    "from": "From",
+    "to": "To",
+    "apply": "Apply",
+    "reset": "Reset",
+    "created": "Created",
+    "updated": "Last updated",
+    "owner": "Owner",
+    "assignee": "Assignee",
+    "dueDate": "Due date",
+    "notes": "Notes",
+    "description": "Description",
+    "title": "Title",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "tags": "Tags",
+    "value": "Value",
+    "priority": "Priority",
+    "status": "Status",
+    "source": "Source",
+    "archived": "Archived",
+    "showArchived": "Show archived",
+    "deleteConfirmTitle": "Delete record",
+    "deleteConfirmDescription": "Are you sure you want to delete “{{name}}”? This cannot be undone.",
+    "archiveConfirmTitle": "Archive record",
+    "archiveConfirmDescription": "Archive “{{name}}”? You can restore it later.",
+    "unsavedChanges": "Unsaved changes may be lost.",
+    "pagination": {
+      "pageOf": "Page {{page}} of {{total}}",
+      "prev": "Previous",
+      "next": "Next",
+      "rowsCount": "{{count}} results",
+      "pageSize": "Per page"
+    },
+    "theme": {
+      "label": "Theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "language": "Language",
+    "workspace": "Workspace",
+    "emptyStateTitle": "Nothing here yet",
+    "emptyStateDescription": "Create the first item to get started.",
+    "emptyFilteredTitle": "No results",
+    "emptyFilteredDescription": "Adjust or clear the filters.",
+    "errorStateTitle": "Something went wrong",
+    "errorStateDescription": "Loading failed. Please try again."
+  },
+  "time": {
+    "justNow": "just now",
+    "minutesAgo": "{{count}} minutes ago",
+    "hoursAgo": "{{count}} hours ago",
+    "daysAgo": "{{count}} days ago",
+    "inMinutes": "in {{count}} minutes",
+    "inHours": "in {{count}} hours",
+    "inDays": "in {{count}} days",
+    "overdue": "Overdue",
+    "dueToday": "Due today",
+    "noDueDate": "No due date",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "tomorrow": "Tomorrow",
+    "thisWeek": "This week",
+    "last7": "Last 7 days",
+    "last30": "Last 30 days",
+    "last90": "Last 90 days",
+    "last12m": "Last 12 months"
+  },
+  "auth": {
+    "loginTitle": "Sign in to NEXORA",
+    "loginSubtitle": "Welcome back to your CRM. Please sign in.",
+    "registerTitle": "Create your account",
+    "registerSubtitle": "Takes a few seconds — your first workspace is created automatically.",
+    "nameField": "Full name",
+    "namePlaceholder": "e.g. Alireza Rajaee",
+    "emailField": "Email",
+    "emailPlaceholder": "you@example.com",
+    "passwordField": "Password",
+    "passwordPlaceholder": "••••••••",
+    "confirmPasswordField": "Confirm password",
+    "workspaceNameField": "Workspace name",
+    "workspaceNamePlaceholder": "e.g. My Business",
+    "loginButton": "Sign in",
+    "registerButton": "Create account",
+    "registering": "Creating account…",
+    "loggingIn": "Signing in…",
+    "noAccount": "No account yet?",
+    "hasAccount": "Already have an account?",
+    "goToRegister": "Create one",
+    "goToLogin": "Sign in",
+    "tagline": "Manage the entire customer lifecycle — from lead to close",
+    "feature1": "Intelligent Follow-up Radar",
+    "feature2": "Visual sales pipeline (Kanban)",
+    "feature3": "Reports & automation",
+    "heroNote": "Bilingual: Persian & English — with full RTL support",
+    "passwordNote": "Password-reset email is not configured; contact your administrator if you forget your password.",
+    "logoutSuccess": "Signed out successfully"
+  },
+  "nav": {
+    "overview": "Overview",
+    "radar": "Follow-up Radar",
+    "leads": "Leads",
+    "contacts": "Contacts",
+    "companies": "Companies",
+    "deals": "Deals & Pipeline",
+    "tasks": "Tasks",
+    "calendar": "Calendar",
+    "activities": "Activities",
+    "reports": "Reports & Insights",
+    "automation": "Automation",
+    "settings": "Settings"
+  },
+  "shell": {
+    "workspaceSelector": "Switch workspace",
+    "createWorkspace": "New workspace",
+    "workspaceNameLabel": "Workspace name",
+    "globalSearchPlaceholder": "Search leads, contacts, deals…",
+    "searchHint": "Press Ctrl+K for quick search",
+    "notifications": "Notifications",
+    "markAllRead": "Mark all as read",
+    "noNotifications": "No notifications yet",
+    "userMenu": "User menu",
+    "profile": "Profile",
+    "accountSettings": "Account settings",
+    "langSwitcher": "Change language",
+    "faLabel": "فارسی",
+    "enLabel": "English",
+    "noResults": "No results found",
+    "minChars": "Type at least 2 characters…",
+    "searching": "Searching…",
+    "searchResults": "Search results",
+    "groupLeads": "Leads",
+    "groupContacts": "Contacts",
+    "groupCompanies": "Companies",
+    "groupDeals": "Deals",
+    "groupTasks": "Tasks",
+    "mobileMenu": "Main menu",
+    "createdWorkspace": "Workspace created",
+    "switchedWorkspace": "Workspace switched"
+  },
+  "enums": {
+    "leadStatus": {
+      "NEW": "New",
+      "CONTACTED": "Contacted",
+      "QUALIFIED": "Qualified",
+      "DISQUALIFIED": "Disqualified",
+      "CONVERTED": "Converted"
+    },
+    "priority": {
+      "LOW": "Low",
+      "MEDIUM": "Medium",
+      "HIGH": "High"
+    },
+    "source": {
+      "WEBSITE": "Website",
+      "REFERRAL": "Referral",
+      "SOCIAL": "Social Media",
+      "CAMPAIGN": "Campaign",
+      "DIRECT": "Direct Inquiry",
+      "OTHER": "Other"
+    },
+    "activityType": {
+      "CALL": "Call",
+      "MEETING": "Meeting",
+      "EMAIL": "Email (logged)",
+      "NOTE": "Note",
+      "TASK_EVENT": "Task event",
+      "STAGE_CHANGE": "Stage change",
+      "CONVERSION": "Lead conversion",
+      "SYSTEM": "System"
+    },
+    "taskStatus": {
+      "OPEN": "Open",
+      "DONE": "Done"
+    },
+    "role": {
+      "OWNER": "Owner",
+      "ADMIN": "Admin",
+      "MEMBER": "Member"
+    },
+    "stageType": {
+      "OPEN": "Open",
+      "WON": "Won",
+      "LOST": "Lost"
+    },
+    "severity": {
+      "CRITICAL": "Critical",
+      "HIGH": "High",
+      "MEDIUM": "Medium",
+      "LOW": "Low"
+    },
+    "recurrence": {
+      "NONE": "No repeat",
+      "DAILY": "Daily",
+      "WEEKLY": "Weekly",
+      "MONTHLY": "Monthly"
+    },
+    "entityType": {
+      "lead": "Lead",
+      "contact": "Contact",
+      "company": "Company",
+      "deal": "Deal",
+      "task": "Task"
+    },
+    "customFieldType": {
+      "TEXT": "Text",
+      "NUMBER": "Number",
+      "DATE": "Date",
+      "BOOLEAN": "Yes/No",
+      "SELECT": "Single select",
+      "MULTI_SELECT": "Multi select",
+      "URL": "URL"
+    }
+  },
+  "dashboard": {
+    "title": "Overview",
+    "subtitle": "Hi {{name}}! Here is your business at a glance.",
+    "subtitleAlt": "Your business summary at a glance.",
+    "kpi": {
+      "totalContacts": "Total contacts",
+      "newLeads": "New leads",
+      "activeDeals": "Active deals",
+      "openPipeline": "Open pipeline",
+      "wonRevenue": "Won revenue",
+      "conversionRate": "Conversion rate",
+      "overdueTasks": "Overdue tasks",
+      "followUpsToday": "Follow-ups due today"
+    },
+    "charts": {
+      "leadsOverTime": "New leads over time",
+      "dealsByStage": "Deals by stage",
+      "wonVsLost": "Won vs lost deals",
+      "revenueOverTime": "Revenue over time",
+      "leadSources": "Lead sources",
+      "taskCompletion": "Task completion",
+      "won": "Won",
+      "lost": "Lost",
+      "completed": "Completed",
+      "openTasks": "Open",
+      "overdue": "Overdue",
+      "count": "Count",
+      "value": "Value"
+    },
+    "sections": {
+      "todayPriorities": "Today's priorities",
+      "overdueFollowUps": "Overdue follow-ups",
+      "stagnantDeals": "Stagnant deals",
+      "recentActivity": "Recent activity",
+      "upcomingMeetings": "Upcoming meetings",
+      "alerts": "Important alerts",
+      "radarCritical": "Critical radar items"
+    },
+    "emptyKpis": "Add some data — or create sample data from Settings — to see statistics.",
+    "loadDemo": "Create sample data",
+    "viewAll": "View all"
+  },
+  "leads": {
+    "title": "Leads",
+    "subtitle": "Manage prospects from first touch to conversion",
+    "createTitle": "New lead",
+    "editTitle": "Edit lead",
+    "createdToast": "Lead created",
+    "updatedToast": "Lead updated",
+    "archivedToast": "Lead archived",
+    "restoredToast": "Lead restored",
+    "deletedToast": "Lead deleted",
+    "field": {
+      "companyName": "Company",
+      "jobTitle": "Job title",
+      "estimatedValue": "Estimated value",
+      "lastContactedAt": "Last contacted",
+      "nextFollowUpAt": "Next follow-up",
+      "disqualificationReason": "Disqualification reason"
+    },
+    "actions": {
+      "convert": "Convert to contact",
+      "convertTitle": "Convert lead to contact",
+      "convertDescription": "Lead “{{name}}” will become a contact. Activity history is preserved.",
+      "convertAlsoDeal": "Also create a sales deal",
+      "convertDealTitle": "Deal title",
+      "convertDealValue": "Deal value",
+      "convertSuccess": "Lead converted successfully",
+      "disqualify": "Disqualify",
+      "disqualifyTitle": "Disqualify lead",
+      "disqualifyReason": "Reason for disqualification",
+      "disqualifySuccess": "Lead disqualified",
+      "qualify": "Qualify",
+      "markContacted": "Log contact",
+      "setFollowUp": "Set next follow-up",
+      "logCall": "Log call"
+    },
+    "duplicateWarning": "A lead with this email already exists",
+    "bulk": {
+      "selected": "{{count}} selected",
+      "archive": "Archive",
+      "restore": "Restore",
+      "assign": "Assign to",
+      "addTag": "Add tag",
+      "delete": "Delete"
+    }
+  },
+  "contacts": {
+    "title": "Contacts",
+    "subtitle": "Key people and their contact details",
+    "createTitle": "New contact",
+    "editTitle": "Edit contact",
+    "createdToast": "Contact created",
+    "updatedToast": "Contact updated",
+    "archivedToast": "Contact archived",
+    "restoredToast": "Contact restored",
+    "deletedToast": "Contact deleted",
+    "field": {
+      "jobTitle": "Job title",
+      "company": "Company",
+      "lastContactedAt": "Last contacted",
+      "nextFollowUpAt": "Next follow-up"
+    },
+    "tabs": {
+      "overview": "Overview",
+      "deals": "Deals",
+      "tasks": "Tasks",
+      "timeline": "Timeline",
+      "notes": "Notes",
+      "customFields": "Custom fields"
+    },
+    "duplicateWarning": "A contact with this email already exists"
+  },
+  "companies": {
+    "title": "Companies",
+    "subtitle": "Organizations and their relationships with contacts and deals",
+    "createTitle": "New company",
+    "editTitle": "Edit company",
+    "createdToast": "Company created",
+    "updatedToast": "Company updated",
+    "archivedToast": "Company archived",
+    "restoredToast": "Company restored",
+    "deletedToast": "Company deleted",
+    "field": {
+      "website": "Website",
+      "industry": "Industry",
+      "size": "Size",
+      "address": "Address",
+      "country": "Country"
+    },
+    "tabs": {
+      "overview": "Overview",
+      "contacts": "Contacts",
+      "deals": "Deals",
+      "tasks": "Tasks",
+      "timeline": "Timeline"
+    },
+    "sizeOptions": {
+      "1-10": "1–10 people",
+      "10-50": "10–50 people",
+      "50-200": "50–200 people",
+      "200+": "200+ people"
+    }
+  },
+  "deals": {
+    "title": "Deals",
+    "subtitle": "Visual sales pipeline — drag cards between stages",
+    "createTitle": "New deal",
+    "editTitle": "Edit deal",
+    "createdToast": "Deal created",
+    "updatedToast": "Deal updated",
+    "archivedToast": "Deal archived",
+    "restoredToast": "Deal restored",
+    "deletedToast": "Deal deleted",
+    "field": {
+      "pipeline": "Pipeline",
+      "stage": "Stage",
+      "probability": "Win probability",
+      "expectedCloseDate": "Expected close date",
+      "actualCloseDate": "Actual close date",
+      "lostReason": "Lost reason",
+      "contact": "Contact",
+      "company": "Company",
+      "currency": "Currency"
+    },
+    "kanban": {
+      "dragHint": "Drag cards between columns",
+      "stageTotal": "Total: {{value}}",
+      "stageCount": "{{count}} deals",
+      "emptyStage": "Nothing in this stage"
+    },
+    "actions": {
+      "markWon": "Mark won",
+      "markLost": "Mark lost",
+      "markLostTitle": "Mark deal as lost",
+      "markLostReason": "Reason (optional)",
+      "wonToast": "Deal won 🎉",
+      "lostToast": "Deal marked as lost",
+      "stageChangedToast": "Deal stage changed"
+    },
+    "filters": {
+      "pipeline": "Pipeline",
+      "stage": "Stage",
+      "owner": "Owner",
+      "priority": "Priority"
+    },
+    "forecast": {
+      "title": "Sales forecast",
+      "openPipeline": "Open pipeline",
+      "weightedPipeline": "Weighted pipeline",
+      "wonRevenue": "Won revenue",
+      "lostValue": "Lost value",
+      "winRate": "Win rate",
+      "avgDealSize": "Average deal size",
+      "expectedThisMonth": "Closing this month",
+      "expectedNextMonth": "Closing next month",
+      "forecastNote": "Weighted values are estimates, not actual revenue."
+    },
+    "detail": {
+      "stageHistory": "Stage history",
+      "daysInStage": "{{count}} days in this stage",
+      "daysSinceActivity": "{{count}} days since last activity"
+    }
+  },
+  "pipelines": {
+    "title": "Pipelines",
+    "addPipeline": "New pipeline",
+    "pipelineName": "Pipeline name",
+    "defaultPipeline": "Default pipeline",
+    "setAsDefault": "Set as default",
+    "addStage": "Add stage",
+    "editStage": "Edit stage",
+    "stageName": "Stage name",
+    "stageProbability": "Win probability (%)",
+    "stageType": "Stage type",
+    "deleteStageWarn": "A stage can only be deleted when it has no deals.",
+    "stageCreated": "Stage added",
+    "stageUpdated": "Stage updated",
+    "stageDeleted": "Stage deleted",
+    "pipelineCreated": "Pipeline created",
+    "cannotDeleteStage": "This stage has deals and cannot be deleted",
+    "customStagesNote": "Stage names you create are user content: they keep the exact text you enter in both languages."
+  },
+  "tasks": {
+    "title": "Tasks",
+    "subtitle": "Manage your to-dos and follow-ups",
+    "createTitle": "New task",
+    "editTitle": "Edit task",
+    "createdToast": "Task created",
+    "updatedToast": "Task updated",
+    "completedToast": "Task completed",
+    "reopenedToast": "Task reopened",
+    "deletedToast": "Task deleted",
+    "field": {
+      "dueAt": "Due date",
+      "recurrence": "Recurrence",
+      "relatedTo": "Related to"
+    },
+    "actions": {
+      "complete": "Mark done",
+      "reopen": "Reopen"
+    },
+    "views": {
+      "list": "List",
+      "board": "Board"
+    },
+    "sections": {
+      "overdue": "Overdue",
+      "today": "Today",
+      "upcoming": "Upcoming",
+      "done": "Done"
+    },
+    "empty": "No tasks yet. Create your first one!"
+  },
+  "calendar": {
+    "title": "Calendar",
+    "subtitle": "Tasks and deadlines at a glance",
+    "day": "Day",
+    "week": "Week",
+    "month": "Month",
+    "prev": "Previous",
+    "next": "Next",
+    "today": "Today",
+    "noEvents": "Nothing scheduled in this range",
+    "legendTasks": "Tasks",
+    "legendFollowUps": "Follow-ups",
+    "selectedDay": "Events on the selected day",
+    "timezoneNote": "The calendar follows the workspace timezone. In Persian mode, dates render with the Persian (Jalali) calendar."
+  },
+  "activities": {
+    "title": "Activities",
+    "subtitle": "Calls, meetings, notes and changes",
+    "logActivity": "Log activity",
+    "logCall": "Log call",
+    "logMeeting": "Log meeting",
+    "logEmail": "Log email",
+    "logNote": "Add note",
+    "createdToast": "Activity logged",
+    "field": {
+      "type": "Activity type",
+      "content": "Details",
+      "relatedTo": "Related to"
+    },
+    "emailNote": "A logged email is a record only — no email is actually sent.",
+    "empty": "No activities logged yet",
+    "byUser": "by {{name}}",
+    "related": "Related to: {{entity}}"
+  },
+  "radar": {
+    "title": "Follow-up Radar",
+    "subtitle": "What needs your attention — with clear reasons",
+    "summary": {
+      "critical": "Critical",
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low",
+      "urgent": "{{count}} items need urgent attention"
+    },
+    "rules": {
+      "OVERDUE_TASK": {
+        "name": "Overdue task",
+        "description": "A task whose due date has passed without completion.",
+        "explanation": "“{{title}}” is {{days}} days past its due date."
+      },
+      "TASK_DUE_TODAY": {
+        "name": "Due today",
+        "description": "A task that must be completed today.",
+        "explanation": "“{{title}}” is due today."
+      },
+      "LEAD_INACTIVE": {
+        "name": "Neglected lead",
+        "description": "A lead with no recorded activity for a while.",
+        "explanation": "“{{title}}” has had no activity for {{days}} days (threshold: {{threshold}})."
+      },
+      "DEAL_INACTIVE": {
+        "name": "Stagnant deal",
+        "description": "A deal with no recent work on it.",
+        "explanation": "“{{title}}” worth {{value}} has been idle for {{days}} days (threshold: {{threshold}})."
+      },
+      "DEAL_STAGE_STAGNANT": {
+        "name": "Stuck in stage",
+        "description": "A deal that has been sitting in one stage too long.",
+        "explanation": "“{{title}}” has been in stage “{{stage}}” for {{days}} days (threshold: {{threshold}})."
+      },
+      "CONTACT_FOLLOWUP_DUE": {
+        "name": "Follow-up due",
+        "description": "A contact whose follow-up time has arrived or passed.",
+        "explanation": "Follow-up for “{{title}}” is {{days}} days overdue."
+      },
+      "HIGH_VALUE_CLOSING": {
+        "name": "High-value deal closing soon",
+        "description": "A valuable deal nearing its close date without sufficient activity.",
+        "explanation": "“{{title}}” worth {{value}} is closing soon but has been idle for {{daysIdle}} days."
+      },
+      "MISSING_INFO": {
+        "name": "Missing information",
+        "description": "A record lacking information needed for the next step.",
+        "explanation": "“{{title}}” is missing information: {{missing}}."
+      }
+    },
+    "missing": {
+      "estimatedValue": "estimated value",
+      "nextFollowUpAt": "next follow-up date",
+      "both": "estimated value and next follow-up date",
+      "contact": "related contact",
+      "expectedCloseDate": "expected close date"
+    },
+    "actions": {
+      "logFollowUp": "Log follow-up",
+      "logActivity": "Log activity",
+      "completeTask": "Complete task",
+      "reviewDeal": "Review deal",
+      "completeInfo": "Complete info"
+    },
+    "filters": {
+      "severity": "Severity",
+      "type": "Rule type",
+      "owner": "Owner"
+    },
+    "empty": {
+      "title": "Everything is under control ✨",
+      "description": "No items need your attention right now."
+    },
+    "lastChecked": "Last checked: {{time}}",
+    "thresholdsNote": "Radar thresholds are configurable in Settings → Workspace.",
+    "scanNow": "Run automation scan",
+    "scannedToast": "Scan completed"
+  },
+  "reports": {
+    "title": "Reports & Insights",
+    "subtitle": "Lead, sales and productivity analytics from real data",
+    "tabs": {
+      "leads": "Leads",
+      "sales": "Sales",
+      "productivity": "Productivity"
+    },
+    "filters": {
+      "dateRange": "Date range",
+      "owner": "Owner",
+      "pipeline": "Pipeline",
+      "source": "Source",
+      "stage": "Stage"
+    },
+    "leads": {
+      "overTime": "New leads over time",
+      "bySource": "Leads by source",
+      "byStatus": "Leads by status",
+      "conversionRate": "Conversion rate",
+      "avgTimeToConvert": "Avg. time to convert",
+      "days": "{{count}} days",
+      "totalLeads": "Total leads"
+    },
+    "sales": {
+      "byStage": "Deals by stage",
+      "winRate": "Win rate",
+      "wonLost": "Won and lost deals",
+      "won": "Won",
+      "lost": "Lost",
+      "valueOverTime": "Sales value over time",
+      "weightedPipeline": "Weighted pipeline",
+      "avgDealSize": "Average deal size",
+      "avgCycle": "Average sales cycle",
+      "lossReasons": "Loss reasons",
+      "wonValue": "Won value",
+      "lostValue": "Lost value"
+    },
+    "productivity": {
+      "completedVsOverdue": "Completed vs overdue tasks",
+      "activitiesOverTime": "Activities over time",
+      "followUpsCompleted": "Follow-ups completed",
+      "workloadByOwner": "Workload by owner",
+      "attentionDeals": "Deals requiring attention",
+      "completed": "Completed",
+      "overdue": "Overdue",
+      "activities": "Activities"
+    },
+    "empty": "No data for this range",
+    "exportCsv": "Export this report as CSV"
+  },
+  "automation": {
+    "title": "Automation",
+    "subtitle": "Configurable rules for repetitive work",
+    "createRule": "New rule",
+    "editRule": "Edit rule",
+    "createdToast": "Rule created",
+    "updatedToast": "Rule updated",
+    "deletedToast": "Rule deleted",
+    "enabledToast": "Rule enabled",
+    "disabledToast": "Rule disabled",
+    "field": {
+      "name": "Rule name",
+      "description": "Description",
+      "trigger": "Trigger",
+      "conditions": "Conditions",
+      "actions": "Actions",
+      "enabled": "Enabled",
+      "lastRun": "Last run",
+      "runCount": "Run count"
+    },
+    "trigger": {
+      "LEAD_CREATED": "Lead created",
+      "DEAL_CREATED": "Deal created",
+      "DEAL_STAGE_CHANGED": "Deal stage changed",
+      "TASK_OVERDUE": "Task overdue",
+      "DEAL_INACTIVE": "Deal inactive",
+      "RECORD_ASSIGNED": "Record assigned",
+      "STATUS_ENTERED": "Status entered"
+    },
+    "conditionField": {
+      "value": "Deal value",
+      "stage": "Stage",
+      "source": "Source",
+      "owner": "Owner",
+      "priority": "Priority",
+      "status": "Status"
+    },
+    "operator": {
+      "equals": "equals",
+      "notEquals": "does not equal",
+      "greaterThan": "greater than",
+      "lessThan": "less than",
+      "contains": "contains"
+    },
+    "actionType": {
+      "CREATE_TASK": "Create task",
+      "ADD_TAG": "Add tag",
+      "ASSIGN": "Assign to user",
+      "NOTIFY": "Send notification",
+      "UPDATE_FIELD": "Update field",
+      "LOG_EVENT": "Log event"
+    },
+    "actionParam": {
+      "title": "Task title",
+      "dueInDays": "Due (in days)",
+      "priority": "Priority",
+      "tagName": "Tag name",
+      "userId": "User",
+      "message": "Message",
+      "field": "Field",
+      "value": "Value"
+    },
+    "executions": {
+      "title": "Execution history",
+      "status": "Status",
+      "SUCCESS": "Success",
+      "FAILED": "Failed",
+      "SKIPPED": "Skipped",
+      "detail": "Detail",
+      "empty": "No executions recorded yet",
+      "scanHint": "Time-based rules (task overdue, deal inactive) run on dashboard visits or via a manual scan."
+    },
+    "validation": {
+      "needName": "Rule name is required",
+      "needTrigger": "Choose a trigger",
+      "needAction": "Add at least one action",
+      "conditionValue": "Enter a condition value"
+    },
+    "empty": {
+      "title": "No rules defined yet",
+      "description": "Create a rule to automate repetitive work."
+    },
+    "userCodeNote": "Automation never executes arbitrary code — only predefined actions."
+  },
+  "notifications": {
+    "type": {
+      "ASSIGNMENT": "Assignment",
+      "TASK_DUE": "Task due",
+      "AUTOMATION": "Automation",
+      "RADAR": "Radar",
+      "SYSTEM": "System"
+    }
+  },
+  "search": {
+    "placeholder": "Search…",
+    "noResults": "No results for “{{query}}”",
+    "resultsCount": "{{count}} results"
+  },
+  "csv": {
+    "import": {
+      "title": "Import data from CSV",
+      "step1": "1. Choose file",
+      "step2": "2. Map columns",
+      "step3": "3. Preview & confirm",
+      "step4": "4. Result",
+      "chooseFile": "Choose CSV file",
+      "dragDrop": "Drop a CSV file here or click to browse",
+      "templateHint": "Template guide: dates use Gregorian YYYY-MM-DD and numbers are plain (no separators).",
+      "downloadTemplate": "Download sample template",
+      "autoMap": "Auto-map",
+      "sourceColumn": "File column",
+      "targetField": "Target field",
+      "skipColumn": "— Skip —",
+      "requiredField": "Required",
+      "previewTitle": "Preview of first {{count}} rows",
+      "validRows": "{{count}} valid rows",
+      "errorRows": "{{count}} rows with errors",
+      "duplicateRows": "{{count}} possible duplicates",
+      "rowError": "Row {{row}}: {{error}}",
+      "duplicate": "Possible duplicate (email exists)",
+      "missingRequired": "Required field “{{field}}” is empty",
+      "invalidDate": "Invalid date (use YYYY-MM-DD)",
+      "invalidNumber": "Invalid number",
+      "skipDuplicates": "Skip duplicate rows (matched by email)",
+      "importButton": "Start import",
+      "importing": "Importing…",
+      "resultTitle": "Import result",
+      "imported": "{{count}} rows imported",
+      "skipped": "{{count}} rows skipped",
+      "failed": "{{count}} rows failed",
+      "done": "Done",
+      "entities": {
+        "contacts": "Contacts",
+        "leads": "Leads",
+        "companies": "Companies"
+      }
+    },
+    "export": {
+      "success": "Your CSV export is ready to download"
+    }
+  },
+  "customFields": {
+    "title": "Custom fields",
+    "create": "New field",
+    "edit": "Edit field",
+    "createdToast": "Field created",
+    "updatedToast": "Field updated",
+    "deletedToast": "Field deleted",
+    "field": {
+      "label": "Display label",
+      "key": "Key (unique, latin)",
+      "entityType": "Applies to",
+      "type": "Field type",
+      "required": "Required",
+      "options": "Options (one per line)",
+      "defaultValue": "Default value"
+    },
+    "empty": "No custom fields defined",
+    "deleteWarn": "Deleting a field also deletes its stored values."
+  },
+  "savedViews": {
+    "saveCurrent": "Save current filters",
+    "namePlaceholder": "Name of saved view",
+    "createdToast": "View saved",
+    "deletedToast": "View deleted",
+    "apply": "Apply view",
+    "empty": "No saved views yet"
+  },
+  "settings": {
+    "title": "Settings",
+    "tabs": {
+      "account": "Account",
+      "workspace": "Workspace",
+      "members": "Members",
+      "crm": "CRM configuration",
+      "data": "Data management",
+      "about": "About"
+    },
+    "account": {
+      "name": "Name",
+      "email": "Email (cannot be changed)",
+      "languagePref": "Interface language",
+      "languagePrefHint": "This preference syncs across your signed-in devices.",
+      "themePref": "Theme",
+      "passwordChange": "Change password",
+      "currentPassword": "Current password",
+      "newPassword": "New password",
+      "confirmPassword": "Confirm new password",
+      "saveProfile": "Save profile",
+      "changePassword": "Change password",
+      "profileSaved": "Profile saved",
+      "passwordChanged": "Password changed",
+      "wrongPassword": "Current password is incorrect"
+    },
+    "workspace": {
+      "name": "Workspace name",
+      "currency": "Default currency",
+      "currencyHint": "Currency affects display only — no conversion is performed.",
+      "timezone": "Timezone",
+      "radarSection": "Follow-up Radar thresholds",
+      "radarLeadInactivity": "Lead inactivity days",
+      "radarDealInactivity": "Deal inactivity days",
+      "radarStageInactivity": "Days stuck in a stage",
+      "radarHighValue": "High-value threshold",
+      "saved": "Settings saved"
+    },
+    "members": {
+      "title": "Workspace members",
+      "addMember": "Add member",
+      "addMemberTitle": "Add a new member",
+      "addMemberHint": "Email delivery is not configured, so members are added by creating their account directly with a temporary password.",
+      "tempPassword": "Temporary password",
+      "role": "Role",
+      "roleHint": "Owner/Admin: manage members and configuration. Member: work with records.",
+      "added": "Member added",
+      "removed": "Member removed",
+      "roleUpdated": "Role updated",
+      "removeConfirm": "Remove “{{name}}”'s access to this workspace?",
+      "cannotRemoveOwner": "The workspace owner cannot be removed",
+      "alreadyMember": "This user is already a member",
+      "userExistsNoWorkspace": "User exists but is not a member of this workspace"
+    },
+    "crm": {
+      "pipelines": "Pipelines & stages",
+      "tags": "Tags",
+      "customFields": "Custom fields",
+      "tagCreate": "New tag",
+      "tagName": "Tag name",
+      "tagColor": "Color",
+      "tagCreated": "Tag created",
+      "tagDeleted": "Tag deleted",
+      "tagInUse": "This tag is in use",
+      "leadStatusesNote": "Lead statuses are fixed system values: New, Contacted, Qualified, Disqualified, Converted."
+    },
+    "data": {
+      "title": "Data management",
+      "import": "Import CSV",
+      "export": "Export CSV",
+      "exportContacts": "Export contacts",
+      "exportLeads": "Export leads",
+      "exportCompanies": "Export companies",
+      "archivedRecords": "Archived records",
+      "archivedHint": "Archived records are visible inside each module by enabling “Show archived”.",
+      "demoData": "Sample data",
+      "demoDataHint": "Creates a demo workspace with realistic data for trying the dashboard, reports, Kanban and Radar. Never overwrites real records.",
+      "createDemo": "Create sample data",
+      "demoCreated": "Sample data created",
+      "demoExists": "A demo workspace already exists"
+    },
+    "about": {
+      "title": "About NEXORA CRM",
+      "description": "NEXORA is a modern, modular CRM for freelancers, developers, designers, consultants and small businesses: lead-to-close management, a visual pipeline, Follow-up Radar, automation and reporting — with complete Persian & English interfaces.",
+      "version": "Version",
+      "builtBy": "Built by Alireza Rajaee",
+      "githubLabel": "Visit GitHub Profile",
+      "githubUrl": "https://github.com/alirezarajaee",
+      "copyright": "© 2025 Alireza Rajaee — All rights reserved.",
+      "techTitle": "Technology stack",
+      "techList": "Next.js 16 · TypeScript · Tailwind CSS 4 · shadcn/ui · Prisma (SQLite) · TanStack Query · Recharts · i18next",
+      "languagesTitle": "Supported languages",
+      "languagesList": "Persian (default, RTL) and English (LTR) — switchable without a page reload"
+    }
+  },
+  "validation": {
+    "required": "This field is required",
+    "email": "Enter a valid email",
+    "minChars": "Enter at least {{count}} characters",
+    "maxChars": "At most {{count}} characters",
+    "number": "Enter a valid number",
+    "positiveNumber": "Enter a number greater than zero",
+    "url": "Enter a valid URL",
+    "date": "Enter a valid date",
+    "passwordMatch": "Passwords do not match",
+    "passwordLength": "Password must be at least 8 characters",
+    "nameRequired": "Name is required",
+    "titleRequired": "Title is required",
+    "keyFormat": "Key may contain latin letters, numbers and dashes only",
+    "selectOne": "Choose an option"
+  },
+  "errors": {
+    "generic": "Something went wrong. Please try again.",
+    "network": "Connection failed. Check your network.",
+    "UNAUTHORIZED": "You must sign in for this action.",
+    "FORBIDDEN": "You do not have permission for this action.",
+    "NOT_FOUND": "The requested record was not found.",
+    "DUPLICATE": "This record is a duplicate.",
+    "VALIDATION_ERROR": "The submitted data is invalid.",
+    "RATE_LIMITED": "Too many attempts. Try again shortly.",
+    "SERVER_ERROR": "Server error. Please try again.",
+    "INVALID_CREDENTIALS": "Incorrect email or password.",
+    "EMAIL_TAKEN": "This email is already registered.",
+    "SESSION_EXPIRED": "Your session expired. Please sign in again."
+  },
+  "toast": {
+    "success": "Done",
+    "error": "Error",
+    "copied": "Copied"
+  },
+  "a11y": {
+    "sidebar": "Sidebar navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "toggleTheme": "Toggle light/dark theme",
+    "switchLanguage": "Switch between Persian and English",
+    "openNotifications": "Open notifications",
+    "openSearch": "Open global search",
+    "userMenu": "Open user menu"
+  }
+}

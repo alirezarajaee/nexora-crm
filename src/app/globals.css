@@ -1,0 +1,202 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-vazir);
+  --font-mono: var(--font-mono-stack);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-surface-2: var(--surface-2);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.625rem;
+  --font-mono-stack: ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Self-hosted Vazirmatn Variable (loaded via @fontsource-variable/vazirmatn).
+     Family name must match the @font-face declared by the package. */
+  --font-vazir: "Vazirmatn Variable", "Vazirmatn", ui-sans-serif, system-ui,
+    -apple-system, "Segoe UI", Tahoma, sans-serif;
+
+  /* Calm Minimal — light theme: quiet slate surfaces, restrained indigo accent */
+  --background: #f8fafc;
+  --foreground: #1e293b;
+  --card: #ffffff;
+  --card-foreground: #1e293b;
+  --popover: #ffffff;
+  --popover-foreground: #1e293b;
+  --primary: #4f46e5;
+  --primary-foreground: #ffffff;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #334155;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --accent: #f1f5f9;
+  --accent-foreground: #1e293b;
+  --destructive: #dc2626;
+  --success: #16a34a;
+  --warning: #d97706;
+  --surface-2: #f8fafc;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #6366f1;
+  --chart-1: #4f46e5;
+  --chart-2: #0ea5e9;
+  --chart-3: #10b981;
+  --chart-4: #f59e0b;
+  --chart-5: #f43f5e;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #1e293b;
+  --sidebar-primary: #4f46e5;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f1f5f9;
+  --sidebar-accent-foreground: #1e293b;
+  --sidebar-border: #e2e8f0;
+  --sidebar-ring: #6366f1;
+}
+
+.dark {
+  /* Calm Minimal — dark theme: deep charcoal, graphite surfaces, same restrained accent */
+  --background: #0f1117;
+  --foreground: #e6e8ec;
+  --card: #151821;
+  --card-foreground: #e6e8ec;
+  --popover: #151821;
+  --popover-foreground: #e6e8ec;
+  --primary: #6366f1;
+  --primary-foreground: #ffffff;
+  --secondary: #1c202b;
+  --secondary-foreground: #c3c8d4;
+  --muted: #1c202b;
+  --muted-foreground: #8a91a0;
+  --accent: #1c202b;
+  --accent-foreground: #e6e8ec;
+  --destructive: #ef4444;
+  --success: #34d399;
+  --warning: #fbbf24;
+  --surface-2: #151821;
+  --border: #262b38;
+  --input: #262b38;
+  --ring: #6366f1;
+  --chart-1: #818cf8;
+  --chart-2: #38bdf8;
+  --chart-3: #34d399;
+  --chart-4: #fbbf24;
+  --chart-5: #fb7185;
+  --sidebar: #12141c;
+  --sidebar-foreground: #c3c8d4;
+  --sidebar-primary: #6366f1;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #1c202b;
+  --sidebar-accent-foreground: #e6e8ec;
+  --sidebar-border: #262b38;
+  --sidebar-ring: #6366f1;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    font-family: var(--font-vazir);
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    /* Comfortable line height for Persian text readability */
+    line-height: 1.65;
+    font-feature-settings: "ss01";
+  }
+  ::selection {
+    background: color-mix(in srgb, var(--primary) 22%, transparent);
+  }
+}
+
+/* Refined scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 8px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--muted-foreground);
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Persian typography: prevent letter-spacing artifacts on Arabic-script glyphs */
+[dir="rtl"] {
+  letter-spacing: 0 !important;
+}
+
+/* Quiet interactive surface: subtle border emphasis on hover (used by list cards) */
+.nx-card-hover {
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.nx-card-hover:hover {
+  border-color: color-mix(in srgb, var(--foreground) 18%, var(--border));
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.04);
+}
+
+/* Kanban */
+.nx-kanban-scroll {
+  scroll-padding-inline: 1rem;
+}
+.nx-kanban-scroll::-webkit-scrollbar {
+  height: 10px;
+}
+
+/* Direction-aware charts text */
+.recharts-text {
+  font-family: inherit;
+}
+
+/* Focus visibility (a11y) */
+:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--ring) 80%, transparent);
+  outline-offset: 2px;
+}
